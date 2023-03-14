@@ -35,7 +35,7 @@
 
 
 
-    fun sumar2 (m:Array<Array<Int>>, sumaColumnas:Array<Int>){
+    fun sumacolumnas (m:Array<Array<Int>>, sumaColumnas:Array<Int>){
         var f: Int = 0
         var c: Int = 0
 
