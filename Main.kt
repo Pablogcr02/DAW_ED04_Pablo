@@ -12,14 +12,7 @@
         var f: Int = 0
         var c: Int = 0
 
-        while (f < m.size){
-            while (c < m[0].size){
-                sumaFilas[f] += m[f][c]
-                c++
-            }
-            c = 0
-            f++
-        }
+        sumarFilas(f, m, c, sumaFilas)
 
         sumar2(m,sumaColum)
         println("La suma de las filas es")
@@ -31,11 +24,26 @@
 
     }
 
+    private fun sumarFilas(
+        f: Int,
+        m: Array<Array<Int>>,
+        c: Int,
+        sumaFilas: Array<Int>
+    ) {
+        var f1 = f
+        var c1 = c
+        while (f1 < m.size) {
+            while (c1 < m[0].size) {
+                sumaFilas[f1] += m[f1][c1]
+                c1++
+            }
+            c1 = 0
+            f1++
+        }
+    }
 
 
-
-
-    fun sumar2 (m:Array<Array<Int>>, sumaColumnas:Array<Int>){
+    fun sumacolumnas (m:Array<Array<Int>>, sumaColumnas:Array<Int>){
         var f: Int = 0
         var c: Int = 0
 
